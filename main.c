@@ -161,18 +161,19 @@ void main(void)
   init_population(next_population);
 
 
-  population_write(population, 1, 6, 1);
-  population_write(population, 10, 11, 1);
-  population_write(population, 10, 16, 1);
-  population_write(population, 10, 2, 1);
-  population_write(population, 10, 7, 1);
+  //OMG a glider
+  population_write(population, 0, 2, 1);
+  population_write(population, 1, 2, 1);
+  population_write(population, 2, 2, 1);
+  population_write(population, 2, 1, 1);
+  population_write(population, 1, 0, 1);
+
+  //OMG a blinker
   population_write(population, 10, 9, 1);
-  population_write(population, 13, 5, 1);
-  population_write(population, 5, 11, 1);
-  population_write(population, 5, 12, 1);
-  population_write(population, 6, 1, 1);
-  population_write(population, 6, 11, 1);
-  population_write(population, 7, 11, 1);
+  population_write(population, 10, 10, 1);
+  population_write(population, 10, 11, 1);
+
+  //OMG THEY'RE GONNA COLLIDE
 
   while (1) {
     tick++;
